@@ -1,6 +1,6 @@
 section.projects {
-    padding: 10rem 0 3rem;
-    margin-bottom: 50px;
+  padding: 10rem 0 3rem;
+  margin-bottom: 50px;
 }
 .projects__container {
   width: 750px;
@@ -21,29 +21,26 @@ section.projects {
 }
 
 .project__name {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-1);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
 }
-.project__description{
-    font-size: var(--small-font-size);
+.project__description {
+  font-size: var(--small-font-size);
 }
 /* Cambia el color de los puntos de paginación en Swiper */
-.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+  .swiper-pagination-bullet {
   background-color: rgb(224, 85, 85);
 }
-
-
-
 
 /* Breakpoints */
 
 @media screen and (max-width: 992px) {
-
-    .projects__container{
-       width: initial;
-    }
-    .project__card{
-        padding: 1.25rem 1.5rem;
-    }
+  .projects__container {
+    width: initial;
+  }
+  .project__card {
+    padding: 1.25rem 1.5rem;
+  }
 }

@@ -118,19 +118,19 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  {t("services.list.uiux.three")}
+                    {t("services.list.uiux.three")}
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  {t("services.list.uiux.four")}
+                    {t("services.list.uiux.four")}
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  {t("services.list.uiux.five")}
+                    {t("services.list.uiux.five")}
                   </p>
                 </li>
               </ul>
@@ -157,22 +157,24 @@ const Services = () => {
                 onClick={() => toggleTab(0)}
                 className="uil uil-times service__modal-close"
               ></i>
-              <h3 className="services__modal-title">            {t("services.title.three")}
-</h3>
+              <h3 className="services__modal-title">
+                {" "}
+                {t("services.title.three")}
+              </h3>
               <p className="services__modal-description">
-              {t("services.description.three")}
+                {t("services.description.three")}
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  {t("services.list.visual.one")}
+                    {t("services.list.visual.one")}
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  {t("services.list.visual.two")}
+                    {t("services.list.visual.two")}
                   </p>
                 </li>
                 <li className="services__modal-service">
@@ -185,13 +187,13 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  {t("services.list.visual.four")}
+                    {t("services.list.visual.four")}
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  {t("services.list.visual.five")}
+                    {t("services.list.visual.five")}
                   </p>
                 </li>
               </ul>

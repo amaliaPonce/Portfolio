@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 import "./contact.css";
 
@@ -11,14 +11,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_hemgn3e",
-        "template_lwfjnmg",
-        form.current,
-        "tFySpVVghg9lWf5sE"
-      )
-      e.target.reset();
+    emailjs.sendForm(
+      "service_hemgn3e",
+      "template_lwfjnmg",
+      form.current,
+      "tFySpVVghg9lWf5sE"
+    );
+    e.target.reset();
   };
 
   return (
@@ -46,7 +45,9 @@ const Contact = () => {
             <div className="contact__card">
               <i className="bx bx-send contact__card-icon"></i>
               <h3 className="contact_card-title">Email</h3>
-              <span className="contact__card-data">amaliaponcetoledo@gmail.com</span>
+              <span className="contact__card-data">
+                amaliaponcetoledo@gmail.com
+              </span>
 
               <a href="mailto:example@email.com" className="contact__button">
                 {t("contact.card.button")}
@@ -60,7 +61,7 @@ const Contact = () => {
               <span className="contact__card-data">amaliaponce</span>
 
               <a href="aquivaelenlacedeDiscord" className="contact__button">
-              {t("contact.card.button")}
+                {t("contact.card.button")}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -71,7 +72,9 @@ const Contact = () => {
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
-              <label className="contact__form-tag">{t("contact.form.label.one")}</label>
+              <label className="contact__form-tag">
+                {t("contact.form.label.one")}
+              </label>
               <input
                 type="text"
                 name="name"
@@ -91,7 +94,9 @@ const Contact = () => {
             </div>
 
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">{t("contact.form.label.three")}</label>
+              <label className="contact__form-tag">
+                {t("contact.form.label.three")}
+              </label>
               <textarea
                 name="project"
                 cols="30"

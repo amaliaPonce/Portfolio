@@ -1,15 +1,14 @@
 import React from "react";
 import "./project.css";
-import { TranslatedData } from "./Data"; 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-import { useTranslation } from 'react-i18next';
-
+import { TranslatedData } from "./Data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
-  const dataToUse = TranslatedData(); 
+  const dataToUse = TranslatedData();
   const { t } = useTranslation();
 
   return (

@@ -78,48 +78,45 @@
   padding: 1.5rem;
   z-index: 1;
 }
-.contact__form-tag{
-    position: absolute;
-    top: -0.75rem;
-    left: 1.25rem;
-    font-size: var(--smaller-font-size);
-    padding: 0.25rem;
-    background-color: var(--body-color);
-    z-index: 10;
+.contact__form-tag {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.25rem;
+  font-size: var(--smaller-font-size);
+  padding: 0.25rem;
+  background-color: var(--body-color);
+  z-index: 10;
 }
-.contact__form-area{
-    height: 11rem;
+.contact__form-area {
+  height: 11rem;
 }
 .contact__form-area textarea {
-    resize: none;
+  resize: none;
 }
 
-
 @media screen and (max-width: 992px) {
-    .contact__container {
-        column-gap: 3rem;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-
+  .contact__container {
+    column-gap: 3rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .contact__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 3rem;
-        max-width: 100%; 
-        overflow-x: hidden;
-    }
+  .contact__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
-    .contact__info {
-        justify-content: center;
-    }
+  .contact__info {
+    justify-content: center;
+  }
 
-    .contact__form {
-      justify-content: center;
-      width: 320px;
+  .contact__form {
+    justify-content: center;
+    width: 320px;
   }
 }

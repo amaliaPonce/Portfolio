@@ -62,7 +62,7 @@
   display: grid;
   place-items: center;
   cursor: pointer;
-  box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1);
   line-height: 1;
 }
 
@@ -84,7 +84,6 @@
 .icon--sun {
   transform: scale(0);
   color: rgb(255, 160, 18);
-
 }
 
 #switch:checked + .icon--moon {
@@ -96,15 +95,14 @@
   transform: scale(1) rotate(360deg);
 }
 
-
 .header.dark-theme {
-  background-color:var(--title-color-night-3); 
+  background-color: var(--title-color-night-3);
 }
 .header.dark-theme .nav__link:visited {
-  color:#fff; 
+  color: #fff;
 }
 .header.dark-theme .nav__logo {
-  color: #fff; 
+  color: #fff;
 }
 
 /* Estilos para el botón de alternancia de idioma */
@@ -128,7 +126,6 @@
   background-color: #007bff;
   color: #fff;
 }
-
 
 /* BreakPoints */
 /* For large devices */
@@ -226,6 +223,5 @@
   .toggle {
     width: 30px;
     height: 30px;
-
   }
 }
