@@ -78,7 +78,7 @@ body {
   color: var(--text-color);
 }
 a:link {
-  color: var(--title-color);
+  color: rgb(190, 189, 189);
 }
 
 
