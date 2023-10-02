@@ -77,43 +77,6 @@
   transform: translate(6px, -7px);
 }
 
-.scroll-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(
-    --title-color-dark
-  );
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 9999;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-}
-
-.scroll-button:hover {
-  background-color: var(--title-color); 
-}
-
-.up-button {
-  top: auto;
-  transform: translateY(-100%);
-}
-
-.down-button {
-  top: 40px;
-}
-
-.scroll-button i {
-  font-size: 24px;
-}
 
 /* Breakpoints */
 

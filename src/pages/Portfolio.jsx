@@ -2,14 +2,14 @@ import React from "react";
 import Qualification from "../components/qualification/Qualification";
 import Projects from "../components/projects/Projects";
 
-function Portfolio({ toggleTheme, isDarkTheme }) {
-  const bodyClasses = `portfolio-body ${isDarkTheme ? "dark-theme" : ""}`;
+function Portfolio({ isDarkTheme }) {
+ 
 
   return (
-    <body className={bodyClasses}>
+    <main>
       <Qualification />
       <Projects />
-    </body>
+    </main>
   );
 }
 

@@ -76,7 +76,6 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
-  margin-top: 100px;
 }
 link {
   text-decoration: none;
@@ -113,9 +112,10 @@ img {
 
 /* Estilos para body */
 .portfolio-body {
-  height: 60vw;
+  height: auto;
   overflow-y: auto;
-  margin: 0;
+  margin-top: 100px;
+
 }
 
 body.dark-theme {

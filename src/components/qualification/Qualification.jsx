@@ -9,14 +9,7 @@ const Qualification = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   };
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
-  const scrollToBottom = () => {
-    const scrollHeight = document.documentElement.scrollHeight;
-    window.scrollTo({ top: scrollHeight, behavior: "smooth" });
-  };
   const { t } = useTranslation();
 
   return (
@@ -205,13 +198,7 @@ const Qualification = () => {
         </div>
       </div>
 
-      <button className="scroll-button up-button" onClick={scrollToTop}>
-        <i className="bx bx-up-arrow-alt"></i>
-      </button>
 
-      <button className="scroll-button down-button" onClick={scrollToBottom}>
-        <i className="bx bx-down-arrow-alt"></i>
-      </button>
     </section>
   );
 };
