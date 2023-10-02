@@ -3,33 +3,29 @@ import Info from "./Info";
 import "../about/about.css";
 import AboutImg from "../../assets/image-cv.JPG";
 import CV from "../../assets/CV-AMALIA.pdf";
-import { useTranslation } from 'react-i18next';
-
+import { useTranslation } from "react-i18next";
 
 const About = ({ isDarkTheme }) => {
   const aboutClasses = `about section ${isDarkTheme ? "dark-theme" : ""}`;
-  const buttonClasses = `button button--flex ${isDarkTheme ? "dark-theme" : ''}`;
+  const buttonClasses = `button button--flex ${
+    isDarkTheme ? "dark-theme" : ""
+  }`;
   const { t } = useTranslation();
 
-
   return (
-<section className={aboutClasses} id="about">
-      <h2 className="section__title">{t('about.title')}</h2>
-      <span className="section__subtitle">{t('about.subtitle')}</span>
+    <section className={aboutClasses} id="about">
+      <h2 className="section__title">{t("about.title")}</h2>
+      <span className="section__subtitle">{t("about.subtitle")}</span>
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
         <div className="about__data">
           <Info />
 
-          <p className="about__description">
-         {t('about.description.one')}
-          </p>
-          <p className="about__description">
-     {t('about.description.two')}
-          </p>
+          <p className="about__description">{t("about.description.one")}</p>
+          <p className="about__description">{t("about.description.two")}</p>
 
           <a download="" href={CV} className={buttonClasses}>
-            {t('about.downloadCvButton')}
+            {t("about.downloadCvButton")}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               id="Layer_1"

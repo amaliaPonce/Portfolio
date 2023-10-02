@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './header.css';
-import { useTranslation } from 'react-i18next';
-import i18n from '../../config/i18n';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./header.css";
+import { useTranslation } from "react-i18next";
+import i18n from "../../config/i18n";
 
 const Header = ({ toggleTheme, isDarkTheme }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,57 +13,54 @@ const Header = ({ toggleTheme, isDarkTheme }) => {
     setMenuOpen(!menuOpen);
   };
 
-  const headerClasses = `header ${isDarkTheme ? 'dark-theme' : ''}`;
+  const headerClasses = `header ${isDarkTheme ? "dark-theme" : ""}`;
 
   const toggleLanguage = () => {
     // Cambiar el estado para alternar el idioma
     setIsEnglish(!isEnglish);
     // Cambiar el idioma de i18n
-    i18n.changeLanguage(isEnglish ? 'es' : 'en');
+    i18n.changeLanguage(isEnglish ? "es" : "en");
   };
 
   return (
     <header className={headerClasses}>
       <nav className="nav container">
-        <Link to="/" className="nav__logo">
-          {t('header.logo')}
-        </Link>
-        <div className={menuOpen ? 'nav__menu show-menu' : 'nav__menu'}>
+        <div className={menuOpen ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
               <Link to="/" className="nav__link active-link">
                 <i className="uil uil-estate nav__icon"></i>
-                {t('header.home')}
+                {t("header.home")}
               </Link>
             </li>
             <li className="nav__item">
               <Link to="/about" className="nav__link">
                 <i className="uil uil-user nav__icon"></i>
-                {t('header.about')}
+                {t("header.about")}
               </Link>
             </li>
             <li className="nav__item">
               <Link to="/skills" className="nav__link">
                 <i className="uil uil-file-alt nav__icon"></i>
-                {t('header.skills')}
+                {t("header.skills")}
               </Link>
             </li>
             <li className="nav__item">
               <Link to="/services" className="nav__link">
                 <i className="uil uil-briefcase-alt nav__icon"></i>
-                {t('header.services')}
+                {t("header.services")}
               </Link>
             </li>
             <li className="nav__item">
               <Link to="/portfolio" className="nav__link">
                 <i className="uil uil-scenery nav__icon"></i>
-                {t('header.portfolio')}
+                {t("header.portfolio")}
               </Link>
             </li>
             <li className="nav__item contact-item">
               <Link to="/contact" className="nav__link">
                 <i className="uil uil-message nav__icon"></i>
-                {t('header.contact')}
+                {t("header.contact")}
               </Link>
             </li>
           </ul>
@@ -112,11 +109,8 @@ const Header = ({ toggleTheme, isDarkTheme }) => {
         </div>
 
         <div className="language-toggle">
-          <button
-            className="languageButton"
-            onClick={toggleLanguage}
-          >
-            {isEnglish ? 'Es' : 'En'}
+          <button className="languageButton" onClick={toggleLanguage}>
+            {isEnglish ? "Es" : "En"}
           </button>
         </div>
       </nav>

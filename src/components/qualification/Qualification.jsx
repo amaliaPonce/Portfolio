@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 import "./qualification.css";
 
@@ -19,11 +19,10 @@ const Qualification = () => {
   };
   const { t } = useTranslation();
 
-
   return (
     <section className="qualification section">
-      <h2 className="section__title">{t('qualification.title')}</h2>
-      <span className="section__subtitle">{t('qualification.subtitle')}</span>
+      <h2 className="section__title">{t("qualification.title")}</h2>
+      <span className="section__subtitle">{t("qualification.subtitle")}</span>
       <div className="qualification__container container">
         <div className="qualification__tabs">
           <div
@@ -59,11 +58,16 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">            {t("qualification.education.one")}
-</h3>
-                <span className="qualification__subtitle">{t("qualification.education.description.one")}</span>
+                <h3 className="qualification__title">
+                  {" "}
+                  {t("qualification.education.one")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.education.description.one")}
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> {t("qualification.education.year.one")}
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {t("qualification.education.year.one")}
                 </div>
               </div>
               <div>
@@ -80,19 +84,30 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title"> {t("qualification.education.two")}</h3>
-                <span className="qualification__subtitle">{t("qualification.education.description.two")}</span>
+                <h3 className="qualification__title">
+                  {" "}
+                  {t("qualification.education.two")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.education.description.two")}
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> {t("qualification.education.year.two")}
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {t("qualification.education.year.two")}
                 </div>
               </div>
             </div>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">{t("qualification.education.three")}</h3>
-                <span className="qualification__subtitle">{t("qualification.education.description.three")}</span>
+                <h3 className="qualification__title">
+                  {t("qualification.education.three")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.education.description.three")}
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> {t("qualification.education.year.two")}
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {t("qualification.education.year.two")}
                 </div>
               </div>
               <div>
@@ -109,10 +124,15 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">{t("qualification.education.four")}</h3>
-                <span className="qualification__subtitle">{t("qualification.education.description.four")}</span>
+                <h3 className="qualification__title">
+                  {t("qualification.education.four")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.education.description.four")}
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> {t("qualification.education.year.two")}
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {t("qualification.education.year.two")}
                 </div>
               </div>
             </div>
@@ -126,10 +146,15 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Trabajo 1</h3>
-                <span className="qualification__subtitle">Subtitulo 1</span>
+                <h3 className="qualification__title">
+                  {t("qualification.work.one")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.work.description.one")}
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2021
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {t("qualification.work.year.one")}
                 </div>
               </div>
               <div>
@@ -146,19 +171,29 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">Trabajo 2</h3>
-                <span className="qualification__subtitle">Subtitulo 2</span>
+                <h3 className="qualification__title">
+                  {t("qualification.work.two")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.work.description.two")}
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2021
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {t("qualification.work.year.two")}
                 </div>
               </div>
             </div>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Trabajo 3</h3>
-                <span className="qualification__subtitle">Subtitulo 3</span>
+                <h3 className="qualification__title">
+                  {t("qualification.work.three")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.work.description.three")}
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2021
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {t("qualification.work.year.three")}
                 </div>
               </div>
               <div>

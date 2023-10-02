@@ -100,30 +100,31 @@ i18n.init({
         "qualification.education.year.one": "2017",
         "qualification.education.year.two": "2023",
 
-        "qualification.work.one": "Store Manager",
-        "qualification.work.two": "Self-employed",
-        "qualification.work.three": "Sales Representative",
+        "qualification.work.one": "Store manager",
+        "qualification.work.two": "Sales representative",
+        "qualification.work.three": "Self-employed",
 
-        "qualification.work.description.one": "RKS Footwear",
-        "qualification.work.description.two": "Dune Shoes",
-        "qualification.work.description.three": "Tezenis, Calzedonia, Hawkers",
+        "qualification.work.description.one": "RKS footwear",
+        "qualification.work.description.two": "Tezenis, Calzedonia, Hawkers",
+        "qualification.work.description.three": "Dune Shoes",
 
         "qualification.work.year.one": "2020-2023",
-        "qualification.work.year.two": "2019",
-        "qualification.work.year.three": "2017-2019",
+        "qualification.work.year.two": "2018-2020",
+        "qualification.work.year.three": "2017-2018",
+
         // Projects
 
         "projects.title": "My projects",
         "projects.subtitle": "2023",
         "projects.title.one": "WorksOut gym backend",
         "projects.title.two": "WorksOut gym frontend",
-        "projects.title.three": "My first chatBot",
+        "projects.title.three": "Memory game",
         "projects.description.one":
           "Collaborative project. In my role in the backend project, I have acquired the necessary skills to implement all endpoints and design the database.",
         "projects.description.two":
-          "For the frontend project, I collaborated to design the user interface and user experience, creating components to achieve an intuitive and appealing application.",
+          "For the frontend project, I collaborated to design the user interface and user experience, creating components to achieve an intuitive application.",
         "projects.description.three":
-          "I developed a chatbot in JavaScript capable of answering frequently asked questions and providing real-time assistance. The project included a simple interface to enhance the user experience.",
+          "I developed a memory game in JavaScript, designed each card to ensure it was visually appealing, and implemented the game's logic.",
         //Contact
 
         "contact.title": "Get in touch",
@@ -261,16 +262,16 @@ i18n.init({
         "qualification.education.year.two": "2023",
 
         "qualification.work.one": "Store manager",
-        "qualification.work.two": "Autónoma",
-        "qualification.work.three": "Sales representative",
+        "qualification.work.two": "Sales representative",
+        "qualification.work.three": "Autónoma",
 
         "qualification.work.description.one": "RKS footwear",
-        "qualification.work.description.two": "Dune shoes",
-        "qualification.work.description.three": "Tezenis,Calzedonia,Hawkers",
+        "qualification.work.description.two": "Tezenis, Calzedonia, Hawkers",
+        "qualification.work.description.three": "Dune Shoes",
 
         "qualification.work.year.one": "2020-2023",
-        "qualification.work.year.two": "2019",
-        "qualification.work.year.three": "2017-2019",
+        "qualification.work.year.two": "2018-2020",
+        "qualification.work.year.three": "2017-2018",
 
         // Projects
         "projects.title": "Mis proyectos",
@@ -278,7 +279,7 @@ i18n.init({
 
         "projects.title.one": "WorksOut gym backend",
         "projects.title.two": "WorksOut gym frontend",
-        "projects.title.three": "Mi primer chatBot",
+        "projects.title.three": "Memorama",
 
         "projects.description.one":
           "Proyecto colaborativo. En mi papel en el proyecto de backend, he adquirido las habilidades necesarias para implementar todos los endpoints y diseñar la base de datos.",
@@ -287,7 +288,7 @@ i18n.init({
           "Para el proyecto frontend, trabajé en colaboración para diseñar la interfaz de usuario y la experiencia del usuario, creando componentes para lograr una aplicación intuitiva y atractiva.",
 
         "projects.description.three":
-          "Desarrollé un chatbot en JavaScript capaz de responder preguntas frecuentes y brindar asistencia en tiempo real. El proyecto incluyó una interfaz sencilla para mejorar la experiencia del usuario.",
+          "Desarrollé un juego memorama en Javascript, diseñé cada tarjeta para asegurarme de que fuera visualmente atractivo e implementé la lógica del juego, que incluye la aleatorización.",
 
         //Contact
 
