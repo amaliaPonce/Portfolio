@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 const Frontend = () => {
   const { t } = useTranslation();
@@ -13,7 +13,9 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">HTML</h3>
-              <span className="skills__level">{t('skills.level.advanced')}</span>
+              <span className="skills__level">
+                {t("skills.level.advanced")}
+              </span>
             </div>
           </div>
 
@@ -21,14 +23,18 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">CSS</h3>
-              <span className="skills__level">{t('skills.level.intermediate')}</span>
+              <span className="skills__level">
+                {t("skills.level.intermediate")}
+              </span>
             </div>
           </div>
           <div className="skills__data">
             <i class="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">JavasCript</h3>
-              <span className="skills__level">{t('skills.level.intermediate')}</span>
+              <span className="skills__level">
+                {t("skills.level.intermediate")}
+              </span>
             </div>
           </div>
         </div>
@@ -37,7 +43,7 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Bootsrap</h3>
-              <span className="skills__level">{t('skills.level.basic')}</span>
+              <span className="skills__level">{t("skills.level.basic")}</span>
             </div>
           </div>
 
@@ -45,18 +51,19 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Git</h3>
-              <span className="skills__level">{t('skills.level.basic')}</span>
+              <span className="skills__level">{t("skills.level.basic")}</span>
             </div>
           </div>
           <div className="skills__data">
             <i class="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">React</h3>
-              <span className="skills__level">{t('skills.level.advanced')}</span>
+              <span className="skills__level">
+                {t("skills.level.advanced")}
+              </span>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -9,7 +9,6 @@ function Portfolio({ toggleTheme, isDarkTheme }) {
     <body className={bodyClasses}>
       <Qualification />
       <Projects />
-  
     </body>
   );
 }

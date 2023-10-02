@@ -1,6 +1,5 @@
-import React from 'react'
-import { useTranslation } from 'react-i18next';
-
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Backend = () => {
   const { t } = useTranslation();
@@ -14,7 +13,9 @@ const Backend = () => {
             <i class="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Node Js</h3>
-              <span className="skills__level">{t('skills.level.advanced')}</span>
+              <span className="skills__level">
+                {t("skills.level.advanced")}
+              </span>
             </div>
           </div>
 
@@ -22,21 +23,22 @@ const Backend = () => {
             <i class="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Python</h3>
-              <span className="skills__level">{t('skills.level.basic')}</span>
+              <span className="skills__level">{t("skills.level.basic")}</span>
             </div>
           </div>
           <div className="skills__data">
             <i class="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">MySQL</h3>
-              <span className="skills__level">{t('skills.level.advanced')}</span>
+              <span className="skills__level">
+                {t("skills.level.advanced")}
+              </span>
             </div>
           </div>
         </div>
-
-
       </div>
-    </div>  )
-}
+    </div>
+  );
+};
 
-export default Backend
+export default Backend;
