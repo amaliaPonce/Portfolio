@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.80bdf181.css",
+    "main.js": "/static/js/main.1891885b.js",
+    "static/media/CV-AMALIA.pdf": "/static/media/CV-AMALIA.783f1a9e2721cb9a73ca.pdf",
+    "static/media/project1.png": "/static/media/project1.4de238449514634b09a1.png",
+    "static/media/project2.png": "/static/media/project2.a842ca809bd3b5aaf538.png",
+    "static/media/project3.png": "/static/media/project3.b96435725b6fc9cdd00f.png",
+    "static/media/image-cv.JPG": "/static/media/image-cv.083e5a673030098ee8a8.JPG",
+    "index.html": "/index.html",
+    "main.80bdf181.css.map": "/static/css/main.80bdf181.css.map",
+    "main.1891885b.js.map": "/static/js/main.1891885b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80bdf181.css",
+    "static/js/main.1891885b.js"
+  ]
+}
