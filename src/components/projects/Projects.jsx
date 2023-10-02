@@ -2,6 +2,7 @@ import React from "react";
 import "./project.css";
 import { TranslatedData } from "./Data";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom"; // Importa Link de React Router
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -36,12 +37,14 @@ const Projects = () => {
         }}
         modules={[Pagination]}
       >
-        {dataToUse.map(({ id, image, title, description }) => {
+        {dataToUse.map(({ id, image, title, description, link }) => {
           return (
             <SwiperSlide className="project__card" key={id}>
-              <img src={image} alt="" className="project__img" />
-              <h3 className="project__name">{title}</h3>
-              <p className="project__description">{description}</p>
+              <Link to={"https://github.com/amaliaPonce"} className="project__link"> 
+                <img src={image} alt="" className="project__img" />
+                <h3 className="project__name">{title}</h3>
+                <p className="project__description">{description}</p>
+              </Link>
             </SwiperSlide>
           );
         })}

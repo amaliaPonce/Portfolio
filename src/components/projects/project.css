@@ -28,7 +28,10 @@ section.projects {
 .project__description {
   font-size: var(--small-font-size);
 }
-/* Cambia el color de los puntos de paginación en Swiper */
+.project__link{
+  text-decoration: none;
+  color: inherit;
+}
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
   .swiper-pagination-bullet {
   background-color: rgb(224, 85, 85);
