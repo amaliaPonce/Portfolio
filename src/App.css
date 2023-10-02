@@ -79,6 +79,10 @@ body {
   margin-top: 100px;
   height: 90vh;
 }
+link {
+  text-decoration: none;
+  color: inherit;
+}
 
 h1,
 h2,
@@ -114,7 +118,9 @@ body.dark-theme {
   color: var(--text-color-night) !important;
 }
 
-.dark-theme .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet,
+.dark-theme
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+  .swiper-pagination-bullet,
 .dark-theme .scroll-button.up-button,
 .dark-theme .scroll-button.down-button {
   background-color: #fff;
@@ -190,7 +196,6 @@ body.dark-theme {
   color: var(--body-color-night);
   background-color: var(--title-color-night-2);
 }
-
 
 /* REUSABLE CSS CLASSES */
 .section {
@@ -341,7 +346,6 @@ body.dark-theme {
 }
 
 @media screen and (max-width: 576px) {
-
 }
 
 /* For small devices */
