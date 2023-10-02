@@ -77,7 +77,6 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   margin-top: 100px;
-  height: 90vh;
 }
 link {
   text-decoration: none;
@@ -113,6 +112,12 @@ img {
 /* Estilos específicos para el tema nocturno */
 
 /* Estilos para body */
+.portfolio-body {
+  height: 60vw;
+  overflow-y: auto;
+  margin: 0;
+}
+
 body.dark-theme {
   background-color: var(--body-color-night) !important;
   color: var(--text-color-night) !important;
@@ -285,12 +290,30 @@ body.dark-theme {
     width: 22px;
     height: 22px;
   }
+  .portfolio-body {
+    height: 123vw;
+    overflow-y: auto;
+    margin: 0;
+  }
+  .contact__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
 }
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
   body {
     margin: 0 0 var(--header-height) 0;
+    
+  }
+  .portfolio-body {
+    height: 200vw;
+    overflow-y: auto;
+    margin: 0;
   }
 
   .section {
@@ -330,24 +353,6 @@ body.dark-theme {
   }
 }
 
-/* For medium devices */
-@media screen and (max-width: 768px) {
-  body {
-    margin: 0 0 var(--header-height) 0;
-  }
-
-  .section {
-    padding: 2rem 0 4rem;
-  }
-
-  .section__subtitle {
-    margin-bottom: var(--mb-3);
-  }
-}
-
-@media screen and (max-width: 576px) {
-}
-
 /* For small devices */
 @media screen and (max-width: 350px) {
   .container {
@@ -356,7 +361,6 @@ body.dark-theme {
   }
 }
 
-/* Tema nocturno */
 @media screen and (max-width: 992px) {
   :root {
     --big-font-size: 2.75rem;

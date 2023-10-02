@@ -12,11 +12,13 @@ function App() {
   const toggleTheme = () => {
     setIsDarkTheme((prevTheme) => !prevTheme);
   };
+  const bodyClasses = `portfolio-body ${isDarkTheme ? "dark-theme" : ""}`;
+
 
   return (
     <BrowserRouter>
       <I18nextProvider i18n={i18n}> 
-        <body className={isDarkTheme ? 'dark-theme' : ''}>
+        <body className={`${bodyClasses} ${isDarkTheme ? 'dark-theme' : ''}`}>
           <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
           <RoutesApp toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
         </body>

@@ -83,8 +83,8 @@
   right: 20px;
   background-color: var(
     --title-color-dark
-  ); /* Color de fondo para los botones */
-  color: #fff; /* Color del icono */
+  );
+  color: #fff;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -95,11 +95,11 @@
   cursor: pointer;
   z-index: 9999;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .scroll-button:hover {
-  background-color: var(--title-color); /* Color de fondo al pasar el ratón */
+  background-color: var(--title-color); 
 }
 
 .up-button {
@@ -111,7 +111,6 @@
   top: 40px;
 }
 
-/* Iconos de flecha */
 .scroll-button i {
   font-size: 24px;
 }
