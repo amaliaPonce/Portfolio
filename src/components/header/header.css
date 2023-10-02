@@ -1,0 +1,231 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+.nav {
+  height: calc(var(--header-height) +1.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  margin-right: 40px;
+  padding: 40px;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 2rem;
+}
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+.nav__close,
+.nav__toggle {
+  display: none;
+}
+.nav__icon,
+.nav__close,
+.nav__toggle {
+  display: none;
+}
+.nav__link:visited {
+  color: var(--title-color);
+}
+
+/* Active Links */
+
+.active-link,
+.nav__link:hover {
+  color: var(--title-color-dark);
+}
+.toggle {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
+  line-height: 1;
+}
+
+.input {
+  display: none;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
+}
+
+.icon--moon {
+  transition-delay: 200ms;
+  color: rgb(8, 8, 50);
+}
+
+.icon--sun {
+  transform: scale(0);
+  color: rgb(255, 160, 18);
+
+}
+
+#switch:checked + .icon--moon {
+  transform: rotate(360deg) scale(0);
+}
+
+#switch:checked ~ .icon--sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
+}
+
+
+.header.dark-theme {
+  background-color:var(--title-color-night-3); 
+}
+.header.dark-theme .nav__link:visited {
+  color:#fff; 
+}
+.header.dark-theme .nav__logo {
+  color: #fff; 
+}
+
+/* Estilos para el botón de alternancia de idioma */
+.language-toggle {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Mueve el botón de idioma al extremo derecho del encabezado */
+}
+
+.languageButton {
+  background-color: #ccc;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.languageButton.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+/* BreakPoints */
+/* For large devices */
+
+@media screen and (max-width: 768px) {
+  .header {
+    top: initial;
+    bottom: 0;
+  }
+  .nav {
+    height: var(--header-height);
+  }
+
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  /* Show menu */
+  .show-menu {
+    bottom: 0;
+  }
+  .nav__list.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 2rem;
+  }
+
+  .nav__icon {
+    font-size: 1.2rem;
+  }
+  .nav__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--title-color);
+  }
+  .nav__close:hover {
+    color: var(--title-color-dark);
+  }
+  .nav__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .nav__icon,
+  .nav__close,
+  .nav__toggle {
+    display: block;
+  }
+
+  /* Dark Theme for Mobile */
+  .header.dark-theme {
+    background-color: #333;
+  }
+
+  .header.dark-theme .nav__menu {
+    background-color: #333;
+  }
+
+  .header.dark-theme .nav__link {
+    color: #fff;
+  }
+
+  .header.dark-theme .nav__close {
+    color: #fff;
+  }
+
+  .header.dark-theme .nav__toggle {
+    color: #fff;
+  }
+  .toggle {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav__menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+  .nav__list {
+    column-gap: 0;
+  }
+  .toggle {
+    width: 30px;
+    height: 30px;
+
+  }
+}

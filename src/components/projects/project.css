@@ -1,0 +1,49 @@
+section.projects {
+    padding: 10rem 0 3rem;
+    margin-bottom: 50px;
+}
+.projects__container {
+  width: 750px;
+}
+
+.project__card {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: var(--mb-3);
+}
+
+.project__img {
+  width: 80%;
+  border-radius: 3rem;
+  margin-bottom: var(--mb-1);
+}
+
+.project__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+.project__description{
+    font-size: var(--small-font-size);
+}
+/* Cambia el color de los puntos de paginación en Swiper */
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+  background-color: rgb(224, 85, 85);
+}
+
+
+
+
+/* Breakpoints */
+
+@media screen and (max-width: 992px) {
+
+    .projects__container{
+       width: initial;
+    }
+    .project__card{
+        padding: 1.25rem 1.5rem;
+    }
+}

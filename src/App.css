@@ -1,38 +1,380 @@
-.App {
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,600&family=Poppins:wght@300&family=Raleway:wght@100;300;700&family=Roboto:ital,wght@1,400;1,700&display=swap");
+
+/* Variables CSS */
+:root {
+  --header-height: 3rem;
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(6, 44%, 68%);
+  --title-color-dark: hsl(40, 30%, 75%);
+  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+
+  /* Font and typography */
+  --body-font: "Montserrat", sans-serif;
+
+  /* .5rem = 8px | 1rem = 16px */
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /* Font weight */
+  --font-normal: 400;
+  --font-medium: 800;
+  --font-semi-bold: 600;
+
+  /* Margenes Bottom */
+  /* .5rem = 8px | 1rem = 16px */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* Z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+  /* Moon */
+  --title-color-night-3: #4a4e69;
+  --title-color-night-2: #9a8c98;
+  --title-color-night: #edcfbf;
+  --text-color-night: hsl(210, 30%, 70%);
+  --body-color-night: #22223b;
+  --container-color-night: hsl(210, 68%, 9%);
+}
+
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  margin-top: 100px;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos específicos para el tema nocturno */
+
+/* Estilos para body */
+body.dark-theme {
+  background-color: var(--body-color-night) !important;
+  color: var(--text-color-night) !important;
+}
+
+.dark-theme .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet,
+.dark-theme .scroll-button.up-button,
+.dark-theme .scroll-button.down-button {
+  background-color: #fff;
+}
+
+.dark-theme .skills__tittle,
+.dark-theme .skills__name,
+.dark-theme .qualification__calender,
+.dark-theme .qualification__title,
+.dark-theme .home__social-icon,
+.dark-theme .home__subtitle,
+.dark-theme .home__title,
+.dark-theme .section__title {
+  color: #fff;
+}
+
+.dark-theme .bx-badge-check:before,
+.dark-theme .button--flex,
+.button.dark-theme {
+  background-color: var(--title-color-night-2) !important;
+  color: #fff !important;
+}
+
+.dark-theme .button--flex:hover,
+.button.dark-theme.button:hover {
+  background-color: var(--title-color-night-3) !important;
+}
+
+.dark-theme .qualification__rounder,
+.dark-theme .qualification__line {
+  background-color: #fff;
+}
+
+.dark-theme h3,
+.dark-theme h2,
+.dark-theme span,
+.dark-theme .contact__form-input::placeholder,
+.dark-theme .contact__button,
+.dark-theme .qualification__button,
+.dark-theme .qualification__button.qualification__active.button--flex,
+.dark-theme .skills .bx-badge-check,
+.dark-theme i {
+  color: var(--title-color-night);
+}
+
+.dark-theme .contact__form-input {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark-theme .qualification__button.qualification__active.button--flex {
+  color: var(--title-color-night) !important;
+}
+
+.dark-theme .services__modal-content {
+  color: #fff;
+  background-color: var(--title-color-night-2);
+}
+
+.dark-theme .qualification__button:hover,
+.dark-theme .qualification__button,
+.dark-theme .contact__form-tag {
+  background-color: var(--body-color-night) !important;
+  color: #fff;
+}
+
+.dark-theme .contact__card,
+.dark-theme .services__modal-icon,
+.dark-theme .services__modal-title,
+.dark-theme .service__content,
+.dark-theme .skills__content,
+.dark-theme .about__box {
+  color: var(--body-color-night);
+  background-color: var(--title-color-night-2);
+}
+
+
+/* REUSABLE CSS CLASSES */
+.section {
+  padding: 5rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+
+.section__title,
+.section__subtitle {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Layout */
+.container {
+  max-width: 968px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button--flex {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button--flex .button__icon {
+  margin-left: 0.5rem;
+  width: 20px;
+  height: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button.button--flex span {
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+/* BREAKPOINTS */
+/* For large devices */
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
+  }
+}
+/* BREAKPOINTS */
+/* For large devices */
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+    gap: 12px;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
+
+/* Tema nocturno */
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
   }
 }

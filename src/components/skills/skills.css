@@ -1,0 +1,116 @@
+.skills__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right"; 
+    column-gap: 5rem;
+    justify-content: center;
+  }
+  
+  .skills__content {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+    margin-top: 50px;
+  }
+  
+  .skills__tittle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+  }
+  
+  .skills__box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+  }
+  
+  .skills_group {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+  }
+  
+  .skills__data {
+    display: flex;
+    column-gap: 0.5rem;
+  }
+  
+  
+  .skills .bx-badge-check {
+    font-size: 1rem;
+    color: var(--title-color);
+  }
+  
+  .skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+  
+  .skills__content:nth-child(1) {
+    grid-area: left;
+  }
+  
+  .skills__content:nth-child(2) {
+    grid-area: right;
+  }
+  
+
+  /* Breakpoints */
+
+  @media screen and (max-width: 992px) {
+    .skills__container {
+      grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas medianas */
+      grid-template-areas:
+        "left"
+        "right"; /* Apilar contenido en pantallas medianas */
+    }
+  
+    .skills__content {
+      padding: 2rem; 
+      margin-top: 30px;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (entre 576px y 768px) */
+  @media screen and (max-width: 768px) {
+    .skills__container {
+      grid-template-columns: 1fr; 
+      grid-template-areas: "left" "right"; 
+    }
+  
+    .skills__content {
+      padding: 1.5rem;
+      margin-top: 30px;
+
+    }
+  }
+  
+  /* Estilos para pantallas muy pequeñas (menos de 576px) */
+  @media screen and (max-width: 576px) {
+    .skills__container {
+      grid-template-columns: 1fr; 
+      grid-template-areas: "left" "right"; 
+    }
+  
+    .skills__content {
+      padding: 1.5rem; 
+      margin-top: 30px;
+
+    }
+  }
+  
+  /* Estilos para pantallas extremadamente pequeñas (menos de 350px) */
+  @media screen and (max-width: 350px) {
+    .skills__container {
+      grid-template-columns: 1fr; /* Mantener una sola columna en pantallas extremadamente pequeñas */
+      grid-template-areas: "left" "right"; /* Apilar contenido en pantallas extremadamente pequeñas */
+    }
+  
+    .skills__content {
+      padding: 0.5rem; 
+    }
+  }
+  
