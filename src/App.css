@@ -77,10 +77,10 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
-link {
-  text-decoration: none;
-  color: inherit;
+a:link {
+  color: var(--title-color);
 }
+
 
 h1,
 h2,

@@ -34,7 +34,7 @@ const Contact = () => {
               <span className="contact__card-data">693-797-937</span>
 
               <a
-                href="aquivaelenlaceSendmedewhatsap"
+                href="https://wa.me/693797937"
                 className="contact__button"
               >
                 {t("contact.card.button")}
@@ -60,7 +60,7 @@ const Contact = () => {
               <h3 className="contact_card-title">Discord</h3>
               <span className="contact__card-data">amaliaponce</span>
 
-              <a href="aquivaelenlacedeDiscord" className="contact__button">
+              <a href="https://www.discordapp.com/users/1104113105597907004" className="contact__button">
                 {t("contact.card.button")}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
