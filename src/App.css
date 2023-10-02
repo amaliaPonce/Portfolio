@@ -78,8 +78,10 @@ body {
   color: var(--text-color);
 }
 a:link {
-  color: rgb(190, 189, 189);
+  color:inherit;
 }
+.button:link {
+color: #fff;}
 
 
 h1,
