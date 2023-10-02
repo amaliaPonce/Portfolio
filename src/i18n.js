@@ -92,7 +92,7 @@ i18n.init({
         "header.about": "Acerca de",
         "header.skills": "Habilidades",
         "header.services": "Servicios",
-        "header.portfolio": "Portafolio",
+        "header.portfolio": "Portfolio",
         "header.contact": "Contacto",
         // home
         "home.title": "Amalia Ponce 👋🏻",
