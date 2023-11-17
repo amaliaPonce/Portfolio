@@ -8,6 +8,14 @@ const Social = ({ isDarkTheme }) => {
 
   return (
     <div className={homeDataClass}>
+            <a
+        href="https://www.linkedin.com/in/amaliadivinaponcetoledo/"
+        className={buttonClasses}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i className="bx bxl-linkedin"></i>
+      </a>
       <a
         href="https://www.instagram.com/amaliponce"
         className={buttonClasses}
@@ -25,6 +33,8 @@ const Social = ({ isDarkTheme }) => {
       >
         <i className="uil uil-github-alt"></i>
       </a>
+
+
     </div>
   );
 };

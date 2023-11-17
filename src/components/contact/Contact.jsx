@@ -56,11 +56,11 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-discord contact__card-icon"></i>
-              <h3 className="contact_card-title">Discord</h3>
+              <i className="bx bxl-linkedin contact__card-icon"></i>
+              <h3 className="contact_card-title">Linkedin</h3>
               <span className="contact__card-data">amaliaponce</span>
 
-              <a href="https://www.discordapp.com/users/1104113105597907004" className="contact__button">
+              <a href="https://www.linkedin.com/in/amaliadivinaponcetoledo/" className="contact__button">
                 {t("contact.card.button")}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>

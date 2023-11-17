@@ -16,7 +16,7 @@ i18n.init({
         "home.title": "Amalia Ponce 👋🏻",
         "home.description":
           "Hi there! I'm a fullstack creative designer based in Córdoba. I'm passionate about art and also the world of technology. Imagining and creating are my favorite pastimes, and I pour all my energy into every project I take on.",
-        "home.sendMailButton": "Send mail",
+        "home.sendMailButton": "Contact me",
         // about me
         "about.title": "About me",
         "about.subtitle": "My introduction",
@@ -98,7 +98,7 @@ i18n.init({
         "home.title": "Amalia Ponce 👋🏻",
         "home.description":
           "¡Hola! Soy diseñadora creativa full-stack con sede en Córdoba. Me encanta el arte y también el mundo de la tecnología. Crear es mi pasatiempo favorito, y pongo toda mi energía en cada proyecto en el que trabajo.",
-        "home.sendMailButton": "Enviar mail",
+        "home.sendMailButton": "Contáctame",
 
         // about me
         "about.title": "Sobre mí",
